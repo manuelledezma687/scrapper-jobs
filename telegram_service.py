@@ -7,15 +7,24 @@ from telegram import Bot
 load_dotenv()
 
 TOKEN = os.getenv("TELEGRAM_TOKEN")
-CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
+CHAT_IDS = [
+    os.getenv("CHAT_ID_1"),
+    os.getenv("CHAT_ID_2"),
+    os.getenv("CHAT_ID_3"),
+]
 
 MAX_MESSAGE_LENGTH = 4000
 
 
-async def send_chunk(bot, text):
+async def send_chunk(
+    bot,
+    chat_id,
+    text
+):
 
     await bot.send_message(
-        chat_id=CHAT_ID,
+        chat_id=chat_id,
         text=text
     )
 
@@ -43,11 +52,30 @@ async def send_message_async(message):
 
     chunks.append(message)
 
-    for chunk in chunks:
+    for chat_id in CHAT_IDS:
 
-        await send_chunk(bot, chunk)
+        if not chat_id:
+            continue
+
+        for chunk in chunks:
+
+            try:
+
+                await send_chunk(
+                    bot,
+                    chat_id,
+                    chunk
+                )
+
+            except Exception as e:
+
+                print(
+                    f"Telegram Error ({chat_id}): {e}"
+                )
 
 
 def send_telegram_message(message):
 
-    asyncio.run(send_message_async(message))
+    asyncio.run(
+        send_message_async(message)
+    )

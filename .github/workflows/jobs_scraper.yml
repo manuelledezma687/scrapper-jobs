@@ -35,6 +35,8 @@ jobs:
       - name: Run scraper
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CHAT_ID_1: ${{ secrets.CHAT_ID_1 }}
+          CHAT_ID_2: ${{ secrets.CHAT_ID_2 }}
+          CHAT_ID_3: ${{ secrets.CHAT_ID_3 }}
         run: |
           python main.py
