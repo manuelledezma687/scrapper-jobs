@@ -1,10 +1,76 @@
 from playwright.sync_api import sync_playwright
 
 SEARCHES = [
+
+    # GENERAL QA AUTOMATION
+    "QA Automation",
     "QA Automation Engineer",
+    "QA Engineer",
+    "Automation Tester",
+    "Test Automation Engineer",
+    "Software Test Engineer",
+
+    # SDET
     "SDET",
+    "Senior SDET",
+    "Junior SDET",
+
+    # PLAYWRIGHT
     "Playwright QA",
-    "Selenium Python QA"
+    "Playwright Engineer",
+    "Playwright Automation",
+    "QA Playwright",
+
+    # SELENIUM
+    "Selenium QA",
+    "Selenium Automation",
+    "Selenium Python QA",
+    "Selenium Java QA",
+    "Automation Tester Selenium",
+
+    # PYTHON QA
+    "Python QA",
+    "Python Automation Tester",
+    "QA Python Engineer",
+
+    # CYPRESS
+    "Cypress QA",
+    "Cypress Automation",
+    "QA Cypress Engineer",
+
+    # TESTING
+    "Software Tester Automation",
+    "Automation QA Tester",
+    "QA Testing Automation",
+
+    # API TESTING
+    "API Automation Tester",
+    "API QA Engineer",
+    "Postman QA Automation",
+
+    # MOBILE QA
+    "Mobile QA Automation",
+    "Appium QA",
+
+    # MANUAL + AUTOMATION HYBRID
+    "QA Analyst Automation",
+    "QA Consultant Automation",
+
+    # SPANISH SEARCHES
+    "QA Automatizacion",
+    "Tester Automatizacion",
+    "Ingeniero QA",
+    "Automation Tester QA",
+
+    # DEV QA
+    "Quality Engineer",
+    "Software Quality Engineer",
+
+    # HOT KEYWORDS
+    "Pytest QA",
+    "Robot Framework QA",
+    "BDD QA Automation",
+
 ]
 
 WORK_TYPES = {
@@ -13,12 +79,33 @@ WORK_TYPES = {
 }
 
 KEYWORDS = [
+
+    # CORE
     "qa",
     "automation",
+    "testing",
+    "tester",
     "sdet",
+
+    # TOOLS
     "selenium",
     "playwright",
-    "testing"
+    "cypress",
+    "appium",
+    "postman",
+    "pytest",
+    "robot framework",
+
+    # LANGUAGES
+    "python",
+    "java",
+    "javascript",
+    "typescript",
+
+    # METHODOLOGIES
+    "bdd",
+    "tdd",
+
 ]
 
 
