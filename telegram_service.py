@@ -178,6 +178,7 @@ CHAT_IDS = [
     os.getenv("CHAT_ID_1"),
     os.getenv("CHAT_ID_2"),
     os.getenv("CHAT_ID_3"),
+    os.getenv("CHAT_ID_4"),
 ]
 
 MAX_MESSAGE_LENGTH = 4000
